@@ -12,3 +12,19 @@ return scelta_casuale}
 var scelta_PL1 = carta_forbice_sasso ( scelta );
 var scelta_PL2 = carta_forbice_sasso ( scelta );
 alert ('PL1 sceglie ' + scelta_PL1 + ' mentre PL2 sceglie ' + scelta_PL2 );
+// confronto per vedere chi vince
+if (( scelta_PL1 === 'forbice' ) && (scelta_PL2 === 'carta' )) {
+  alert('PL1 ha vinto!');
+} else if ((scelta_PL1 === 'forbice') && (scelta_PL2 === 'sasso' )) {
+  alert('PL2 ha vinto!');
+} else if ((scelta_PL1 === 'carta')  && (scelta_PL2 === 'sasso')) {
+  alert('PL1 ha vinto!');
+} else if ((scelta_PL1 === 'carta')  && (scelta_PL2 === 'forbice')) {
+  alert('PL2 ha vinto!');
+} else if ((scelta_PL1 === 'sasso')  && (scelta_PL2 === 'forbice')) {
+  alert('PL1 ha vinto!');
+} else if ((scelta_PL1 === 'sasso')  && (scelta_PL2 === 'carta')) {
+  alert('PL2 ha vinto!');
+} else {
+  alert('pari')
+};
