@@ -8,3 +8,7 @@ alert('inizia la partita!');
 function carta_forbice_sasso ( scelta_casuale ) {
   var scelta_casuale = scelta[Math.floor(Math.random() * scelta.length)];
 return scelta_casuale}
+// i giocatori CPU effettuano la loro scelta tramite la funzione
+var scelta_PL1 = carta_forbice_sasso ( scelta );
+var scelta_PL2 = carta_forbice_sasso ( scelta );
+alert ('PL1 sceglie ' + scelta_PL1 + ' mentre PL2 sceglie ' + scelta_PL2 );
